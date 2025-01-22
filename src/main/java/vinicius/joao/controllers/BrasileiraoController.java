@@ -10,61 +10,85 @@ import javafx.scene.control.TextField;
 public class BrasileiraoController {
 
     @FXML
-    private Tab BotaoADDArtilheiros;
-
-    @FXML
-    private TextField BotaoADDCTimesJogaram;
-
-    @FXML
-    private DatePicker BotaoADDCadastrarDataFundacao;
-
-    @FXML
-    private Button BotaoADDCadastrarJogo;
-
-    @FXML
-    private TextField BotaoADDCadastrarNomeEstadio;
-
-    @FXML
-    private TextField BotaoADDCadastrarNomeTime;
-
-    @FXML
-    private TextField BotaoADDCadastrarQuantidadeJogadores;
-
-    @FXML
-    private TextField BotaoADDCadastrarQuantidadeJogadores1;
-
-    @FXML
-    private Button BotaoADDCadastrarTime;
-
-    @FXML
-    private Tab BotaoADDCadastroJogos;
-
-    @FXML
-    private Tab BotaoADDCadastroTimes;
-
-    @FXML
-    private DatePicker BotaoADDData;
-
-    @FXML
-    private TextField BotaoADDEstadio;
+    private Tab BotaoADDTabela;
 
     @FXML
     private TextField BotaoADDHorario;
 
     @FXML
-    private TextField BotaoADDPesquisarTime;
+    private Tab BotaoADDCadastroTimes;
 
     @FXML
-    private TextField BotaoADDPontuacao;
+    private TextField BotaoADDPlacarVisitante;
+
+    @FXML
+    private TextField BotaoADDCadastrarNomeEstadio;
+
+    @FXML
+    private TextField BotaoADDCadastrarQuantidadeJogadores;
 
     @FXML
     private TextField BotaoADDPosicao;
 
     @FXML
-    private Tab BotaoADDTabela;
+    private TextField BotaoADDCadastrarNomeTime;
+
+    @FXML
+    private TextField BotaoADDCadastroABVtimes;
+
+    @FXML
+    private TextField BotaoADDEstadio;
+
+    @FXML
+    private Button BotaoADDCadastrarJogo;
+
+    @FXML
+    private TextField BotaoADDTimeMandante;
+
+    @FXML
+    private TextField BotaoADDPesquisarTime;
+
+    @FXML
+    private Button BotaoADDCadastrarTime;
+
+    @FXML
+    private TextField BotaoADDTimeVsitante;
 
     @FXML
     private Tab BotaoADDTimesCadastrados;
+
+    @FXML
+    private DatePicker BotaoADDCadastrarDataFundacao;
+
+    @FXML
+    private Tab BotaoADDCadastroJogos;
+
+    @FXML
+    private TextField BotaoADDPlacarMandante;
+
+    @FXML
+    private TextField BotaoADDCadastrarLocalOrigem;
+
+    @FXML
+    private DatePicker BotaoADDData;
+
+    @FXML
+    private Tab BotaoADDArtilheiros;
+
+    @FXML
+    void BotaoADDTabela(ActionEvent event) {
+
+    }
+
+    @FXML
+    void BotaoADDTimesCadastrados(ActionEvent event) {
+
+    }
+
+    @FXML
+    void BotaoADDPesquisarTime(ActionEvent event) {
+
+    }
 
     @FXML
     void BotaoADDArtilheiros(ActionEvent event) {
@@ -72,22 +96,7 @@ public class BrasileiraoController {
     }
 
     @FXML
-    void BotaoADDCTimesJogaram(ActionEvent event) {
-
-    }
-
-    @FXML
-    void BotaoADDCadastrarDataFundacao(ActionEvent event) {
-
-    }
-
-    @FXML
-    void BotaoADDCadastrarJogo(ActionEvent event) {
-
-    }
-
-    @FXML
-    void BotaoADDCadastrarNomeEstadio(ActionEvent event) {
+    void BotaoADDCadastroTimes(ActionEvent event) {
 
     }
 
@@ -102,7 +111,27 @@ public class BrasileiraoController {
     }
 
     @FXML
+    void BotaoADDCadastrarDataFundacao(ActionEvent event) {
+
+    }
+
+    @FXML
+    void BotaoADDCadastrarNomeEstadio(ActionEvent event) {
+
+    }
+
+    @FXML
     void BotaoADDCadastrarTime(ActionEvent event) {
+
+    }
+
+    @FXML
+    void BotaoADDCadastroABVtimes(ActionEvent event) {
+
+    }
+
+    @FXML
+    void BotaoADDCadastrarLocalOrigem(ActionEvent event) {
 
     }
 
@@ -112,12 +141,7 @@ public class BrasileiraoController {
     }
 
     @FXML
-    void BotaoADDCadastroTimes(ActionEvent event) {
-
-    }
-
-    @FXML
-    void BotaoADDData(ActionEvent event) {
+    void BotaoADDTimeMandante(ActionEvent event) {
 
     }
 
@@ -132,12 +156,7 @@ public class BrasileiraoController {
     }
 
     @FXML
-    void BotaoADDPesquisarTime(ActionEvent event) {
-
-    }
-
-    @FXML
-    void BotaoADDPontuacao(ActionEvent event) {
+    void BotaoADDTimeVsitante(ActionEvent event) {
 
     }
 
@@ -147,12 +166,22 @@ public class BrasileiraoController {
     }
 
     @FXML
-    void BotaoADDTabela(ActionEvent event) {
+    void BotaoADDData(ActionEvent event) {
 
     }
 
     @FXML
-    void BotaoADDTimesCadastrados(ActionEvent event) {
+    void BotaoADDCadastrarJogo(ActionEvent event) {
+
+    }
+
+    @FXML
+    void BotaoADDPlacarMandante(ActionEvent event) {
+
+    }
+
+    @FXML
+    void BotaoADDPlacarVisitante(ActionEvent event) {
 
     }
 

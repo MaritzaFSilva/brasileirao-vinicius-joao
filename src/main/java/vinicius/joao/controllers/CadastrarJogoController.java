@@ -11,7 +11,7 @@ public class CadastrarJogoController {
     @FXML
     private Tab BotaoADDCadastroJogos;
     @FXML
-    private TextField BotaoADDCTimesMandante;
+    private TextField BotaoADDTimesMandante;
     @FXML
     private TextField BotaoADDTimeVisitante;
     @FXML
@@ -35,11 +35,10 @@ public class CadastrarJogoController {
     void BotaoADDCadastroJogos(ActionEvent event) {
     }
 
-@FXML
-    void BotaoADDCTimesMandante(ActionEvent event) {
+    @FXML
+    void BotaoADDTimeMandante(ActionEvent event) {
 
-}
-
+    }
 @FXML
     void BotaoADDEstadio(ActionEvent event) {
 

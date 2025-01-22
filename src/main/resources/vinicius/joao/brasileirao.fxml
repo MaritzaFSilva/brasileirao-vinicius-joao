@@ -99,8 +99,8 @@
                                     <Font name="Arial Bold Italic" size="12.0" />
                                  </font>
                               </Text>
-                              <TextField layoutX="88.0" layoutY="110.0" prefHeight="31.0" prefWidth="150.0" promptText="Abreviação do time" />
-                              <TextField fx:id="BotaoADDCadastrarQuantidadeJogadores1" layoutX="323.0" layoutY="157.0" onAction="#BotaoADDCadastrarQuantidadeJogadores" prefHeight="32.0" prefWidth="150.0" promptText="Local de origem" />
+                              <TextField fx:id="BotaoADDCadastroABVtimes" layoutX="88.0" layoutY="110.0" onAction="#BotaoADDCadastroABVtimes" prefHeight="31.0" prefWidth="150.0" promptText="Abreviação do time" />
+                              <TextField fx:id="BotaoADDCadastrarLocalOrigem" layoutX="323.0" layoutY="157.0" onAction="#BotaoADDCadastrarLocalOrigem" prefHeight="32.0" prefWidth="150.0" promptText="Local de origem" />
                            </children>
                         </AnchorPane>
                     </content>
@@ -109,10 +109,10 @@
                     <content>
                       <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                            <children>
-                              <TextField fx:id="BotaoADDCTimesJogaram" layoutX="31.0" layoutY="59.0" onAction="#BotaoADDCTimesJogaram" prefHeight="32.0" prefWidth="149.0" promptText="Times mandante" />
+                              <TextField fx:id="BotaoADDTimeMandante" layoutX="31.0" layoutY="59.0" onAction="#BotaoADDTimeMandante" prefHeight="32.0" prefWidth="149.0" promptText="Times mandante" />
                               <TextField fx:id="BotaoADDEstadio" layoutX="214.0" layoutY="59.0" onAction="#BotaoADDEstadio" prefHeight="32.0" prefWidth="149.0" promptText="Estádio" />
                               <TextField fx:id="BotaoADDHorario" layoutX="400.0" layoutY="59.0" onAction="#BotaoADDHorario" prefHeight="32.0" prefWidth="149.0" promptText="Hoŕaio" />
-                              <TextField fx:id="BotaoADDPontuacao" layoutX="31.0" layoutY="117.0" onAction="#BotaoADDPontuacao" prefHeight="32.0" prefWidth="149.0" promptText="Time visitante" />
+                              <TextField fx:id="BotaoADDTimeVsitante" layoutX="31.0" layoutY="117.0" onAction="#BotaoADDTimeVsitante" prefHeight="32.0" prefWidth="149.0" promptText="Time visitante" />
                               <TextField fx:id="BotaoADDPosicao" layoutX="214.0" layoutY="117.0" onAction="#BotaoADDPosicao" prefHeight="32.0" prefWidth="149.0" promptText="Posição" />
                               <DatePicker fx:id="BotaoADDData" layoutX="401.0" layoutY="117.0" onAction="#BotaoADDData" prefHeight="32.0" prefWidth="148.0" promptText="Data" />
                               <Button fx:id="BotaoADDCadastrarJogo" layoutX="400.0" layoutY="168.0" mnemonicParsing="false" onAction="#BotaoADDCadastrarJogo" prefHeight="31.0" prefWidth="149.0" text="Cadastrar Jogo" />
@@ -121,8 +121,8 @@
                                     <Font name="Arial Bold Italic" size="12.0" />
                                  </font>
                               </Text>
-                              <TextField layoutX="31.0" layoutY="168.0" prefHeight="31.0" prefWidth="149.0" promptText="Placar mandante" />
-                              <TextField layoutX="212.0" layoutY="168.0" prefHeight="31.0" prefWidth="149.0" promptText="Placar visitante" />
+                              <TextField fx:id="BotaoADDPlacarMandante" layoutX="31.0" layoutY="168.0" onAction="#BotaoADDPlacarMandante" prefHeight="31.0" prefWidth="149.0" promptText="Placar mandante" />
+                              <TextField fx:id="BotaoADDPlacarVisitante" layoutX="212.0" layoutY="168.0" onAction="#BotaoADDPlacarVisitante" prefHeight="31.0" prefWidth="149.0" promptText="Placar visitante" />
                            </children>
                         </AnchorPane>
                     </content>
