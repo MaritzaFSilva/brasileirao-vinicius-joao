@@ -21,8 +21,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-
-<AnchorPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="vinicius.joao.controllers.BrasileiraoController">
+<AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="vinicius.joao.controllers.BrasileiraoController">
    <children>
       <Pane layoutY="-1.0" prefHeight="409.0" prefWidth="600.0" style="-fx-background-color: #ffffff;">
          <children>
@@ -61,22 +60,61 @@
                   </Tab>
                   <Tab fx:id="BotaoADDArtilheiros" text="Artilheiros">
                      <content>
-                        <!-- Conteúdo da aba Artilheiros -->
+                         <!-- TableView para Artilheiros -->
+                        <TableView fx:id="tableViewArtilheiros" prefHeight="305.0" prefWidth="600.0">
+                           <columns>
+                              <TableColumn fx:id="colunaJogador" prefWidth="200.0" text="JOGADOR" />
+                              <TableColumn fx:id="colunaGols" minWidth="50.0" prefWidth="200.0" text="GOLS" />
+                              <TableColumn fx:id="colunaJogo" prefWidth="200.0" text="JOGO" />
+                           </columns>
+                        </TableView>
                      </content>
                   </Tab>
                   <Tab fx:id="BotaoADDTimesCadastrados" text="Times">
                      <content>
-                        <!-- Conteúdo da aba Times -->
+                        <!-- não fuciona -->
+                         <TableView fx:id="tableViewTimes" layoutX="10" layoutY="50" prefHeight="250" prefWidth="580">
+                            <columns>
+                            <TableColumn fx:id="colunaNomeTime" text="Nome" />
+                             <TableColumn fx:id="colunaLocalOrigem" text="Local Origem" />
+                            <TableColumn fx:id="colunaEstadio" text="Estádio" />
+                             <TableColumn fx:id="colunaAnoFundacao" text="Ano Fundação" />
+                     </columns>
+                     </TableView>
                      </content>
                   </Tab>
                   <Tab fx:id="BotaoADDCadastroTimes" text="Cadastrar Times">
-                     <content>
-                        <!-- Conteúdo da aba Cadastrar Times -->
-                     </content>
-                  </Tab>
+    <content>
+        <AnchorPane>
+            <children>
+                <TextField fx:id="BotaoADDNomeTime" layoutX="37" layoutY="74" promptText="Nome do Time" />
+                <TextField fx:id="BotaoADDLocalOrigem" layoutX="37" layoutY="122" promptText="Local de Origem" />
+                <TextField fx:id="BotaoADDEstadio" layoutX="37" layoutY="167" promptText="Estádio" />
+                <TextField fx:id="BotaoADDAnoFundacao" layoutX="333" layoutY="74" promptText="Ano de Fundação" />
+                <TextField fx:id="BotaoADDCorUniforme" layoutX="333" layoutY="122" promptText="Cor do Uniforme" />
+                <TextField fx:id="BotaoADDABVNomeTime" layoutX="333" layoutY="167" promptText="ABV do Time" />
+                <!-- Botão para cadastrar o time -->
+                <Button fx:id="BotaoADDCadastrarTime" layoutX="231" layoutY="251" onAction="#onCadastrarTime" text="Cadastrar Time" />
+            </children>
+        </AnchorPane>
+    </content>
+</Tab>
                   <Tab fx:id="BotaoADDCadastroJogos" text="Cadastrar Jogos">
                      <content>
-                        <!-- Conteúdo da aba Cadastrar Jogos -->
+                     <AnchorPane>
+                      <children>
+                     <!-- não fuciona -->
+                           <TextField fx:id="BotaoADDTimesMandante" layoutX="57.0" layoutY="123.0" promptText="Time Mandante" />
+                           <TextField fx:id="BotaoADDTimeVisitante" layoutX="319.0" layoutY="123.0" promptText="Time Visitante" />
+                           <TextField fx:id="BotaoADDPlacarMandante" layoutX="57.0" layoutY="75.0" promptText="Placar Mandante" />
+                           <TextField fx:id="BotaoADDPlacarVisitante" layoutX="319.0" layoutY="75.0" promptText="Placar Visitante" />
+                           <DatePicker fx:id="BotaoADDData" layoutX="319.0" layoutY="209.0" prefHeight="31.0" prefWidth="187.0" />
+                           <TextField fx:id="BotaoADDEstadio" layoutX="57.0" layoutY="167.0" promptText="Estádio" />
+                           <TextField fx:id="BotaoADDHorario" layoutX="319.0" layoutY="167.0" promptText="Horário" />
+                           <!-- Botão para cadastrar o jogo -->
+                           <Button fx:id="BotaoADDCadastrarJogo" layoutX="97.0" layoutY="225.0" onAction="#onCadastrarJogo" text="Cadastrar Jogo" />
+                        </children>
+                     </AnchorPane>
                      </content>
                   </Tab>
                </tabs>
