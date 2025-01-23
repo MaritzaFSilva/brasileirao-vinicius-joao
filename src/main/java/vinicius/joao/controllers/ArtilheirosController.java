@@ -1,15 +1,16 @@
 package vinicius.joao.controllers;
 
-import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Tab;
 
 public class ArtilheirosController {
+
     @FXML
     private Tab BotaoADDArtilheiros;
 
-       @FXML
-    void BotaoADDArtilheiros(ActionEvent event) {
-
+        public void initialize() {
+            // Ações para a aba Tabela, como carregar dados na TableView
+            System.out.println("A aba Artilheiro foi inicializada.");
+        }
+        // Outros métodos específicos para a aba Tabela
     }
-}

@@ -45,7 +45,18 @@
                <tabs>
                   <Tab fx:id="BotaoADDTabela" text="Tabela">
                      <content>
-                        <!-- Conteúdo da aba Tabela -->
+                        <!-- TableView para a Tabela -->
+                        <TableView fx:id="tableView" prefHeight="305.0" prefWidth="600.0">
+                           <columns>
+                              <TableColumn fx:id="colunaPosicao" prefWidth="75.0" text="POSIÇÃO" />
+                              <TableColumn fx:id="colunaTimes" prefWidth="75.0" text="TIMES" />
+                              <TableColumn fx:id="colunaPontos" prefWidth="75.0" text="PONTOS" />
+                              <TableColumn fx:id="colunaJogos" prefWidth="75.0" text="JOGOS" />
+                              <TableColumn fx:id="colunaVitorias" prefWidth="75.0" text="VITÓRIAS" />
+                              <TableColumn fx:id="colunaEmpates" prefWidth="75.0" text="EMPATES" />
+                              <TableColumn fx:id="colunaDerrotas" prefWidth="99.0" text="DERROTAS" />
+                           </columns>
+                        </TableView>
                      </content>
                   </Tab>
                   <Tab fx:id="BotaoADDArtilheiros" text="Artilheiros">

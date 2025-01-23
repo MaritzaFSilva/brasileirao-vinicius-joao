@@ -1,86 +1,67 @@
 package vinicius.joao.controllers;
 
-import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.scene.control.Button;
-import javafx.scene.control.DatePicker;
-import javafx.scene.control.Tab;
+import javafx.scene.control.Alert;
+import javafx.scene.control.Alert.AlertType;
 import javafx.scene.control.TextField;
 
 public class CadastroTimesController {
 
-  @FXML
-  private Tab BotaoADDCadastroTimes;
+    @FXML
+    private TextField BotaoADDNomeTime;
 
-  @FXML
-  private TextField BotaoADDCadastrarNomeTime;
+    @FXML
+    private TextField BotaoADDLocalOrigem;  // Corrigido para "LocalOrigem"
 
-  @FXML
-  private TextField BotaoADDCadastrarNomeEstadio;
+    @FXML
+    private TextField BotaoADDEstadio;
 
-  @FXML
-  private TextField BotaoADDCadastroABVtimes;
+    @FXML
+    private TextField BotaoADDAnoFundacao;
 
-  @FXML
-  private DatePicker BotaoADDCadastrarDataFundacao;
+    @FXML
+    private TextField BotaoADDCorUniforme;
 
-  @FXML
-  private TextField BotaoADDCadastrarLocalOrigem;
+    @FXML
+    private TextField BotaoADDABVNomeTime;
 
-  @FXML
-  private TextField BotaoADDCadastrarQuantidadeJogadores;
-
-  @FXML
-  private Button BotaoADDCadastrarTime;
-
-  @FXML
-  void BotaoADDCadastroTimes(ActionEvent event) {
-
-  }
-
-  @FXML
-  void BotaoADDCadastrarDataFundacao(ActionEvent event) {
-
-  }
-
-  @FXML
-  void BotaoADDCadastrarNomeEstadio(ActionEvent event) {
-  }
-
-  @FXML
-  void BotaoADDCadastrarNomeTime(ActionEvent event) {
-
-  }
-
-  @FXML
-  void BotaoADDCadastrarQuantidadeJogadores(ActionEvent event) {
-
-  }
-
-  @FXML
-  void BotaoADDCadastrarTime(ActionEvent event) {
-    // Método de ação para cadastrar um time
-    String nomeTime = BotaoADDCadastrarNomeTime.getText();
-    String nomeEstadio = BotaoADDCadastrarNomeEstadio.getText();
-    String abvTime = BotaoADDCadastroABVtimes.getText();
-    String localOrigem = BotaoADDCadastrarLocalOrigem.getText();
-    String quantidadeJogadores = BotaoADDCadastrarQuantidadeJogadores.getText();
-    String dataFundacao = BotaoADDCadastrarDataFundacao.getValue() != null ? BotaoADDCadastrarDataFundacao.getValue().toString() : "";
-
-    if (nomeTime.isEmpty() || nomeEstadio.isEmpty() || abvTime.isEmpty() || localOrigem.isEmpty() || quantidadeJogadores.isEmpty() || dataFundacao.isEmpty()) {
-        System.out.println("Todos os campos são obrigatórios!");
-    } else {
-        int jogadores = Integer.parseInt(quantidadeJogadores);
-        salvarTime(nomeTime, nomeEstadio, abvTime, localOrigem, jogadores, dataFundacao);
+    // Método de inicialização para a aba
+    public void initialize() {
+        System.out.println("A aba Cadastro Times foi inicializada.");
     }
-  }
 
-  @FXML
-  void BotaoADDCadastrarLocalOrigem(ActionEvent event) {
-  }
+    // Método para lidar com o evento de cadastro de time
+    @FXML
+    void BotaoADDCadastrarTime() {
+        // Recuperando os valores inseridos nos campos de texto
+        String nomeTime = BotaoADDNomeTime.getText();
+        String localOrigem = BotaoADDLocalOrigem.getText(); // Corrigido para "localOrigem"
+        String estadio = BotaoADDEstadio.getText();
+        String anoFundacao = BotaoADDAnoFundacao.getText();
+        String corUniforme = BotaoADDCorUniforme.getText();
 
-  private void salvarTime(String nomeTime, String nomeEstadio, String abvTime, String localOrigem, int jogadores, String dataFundacao) {
-    System.out.println("Time cadastrado: " + nomeTime);
+        // Validando se todos os campos foram preenchidos
+        if (nomeTime.isEmpty() || localOrigem.isEmpty() || estadio.isEmpty() || anoFundacao.isEmpty() || corUniforme.isEmpty()) {
+            // Exibindo um alerta caso algum campo esteja vazio
+            Alert alert = new Alert(AlertType.WARNING);
+            alert.setTitle("Campos obrigatórios");
+            alert.setHeaderText("Preencha todos os campos");
+            alert.setContentText("Todos os campos devem ser preenchidos para cadastrar o time.");
+            alert.showAndWait();
+        } else {
+            // Caso todos os campos sejam preenchidos, exibe um alerta de sucesso
+            Alert alert = new Alert(AlertType.INFORMATION);
+            alert.setTitle("Cadastro realizado");
+            alert.setHeaderText("Time cadastrado com sucesso!");
+            alert.setContentText("Time: " + nomeTime + "\nLocal de Origem: " + localOrigem + "\nEstádio: " + estadio + "\nAno de Fundação: " + anoFundacao + "\nCor do Uniforme: " + corUniforme);
+            alert.showAndWait();
 
-  }
+            // Limpa os campos após cadastro (opcional)
+            BotaoADDNomeTime.clear();
+            BotaoADDLocalOrigem.clear();
+            BotaoADDEstadio.clear();
+            BotaoADDAnoFundacao.clear();
+            BotaoADDCorUniforme.clear();
+        }
+    }
 }
