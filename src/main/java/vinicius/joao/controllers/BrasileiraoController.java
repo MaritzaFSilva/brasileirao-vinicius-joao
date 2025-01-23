@@ -1,57 +1,136 @@
 package vinicius.joao.controllers;
 
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.scene.control.Button;
+import javafx.scene.control.DatePicker;
 import javafx.scene.control.Tab;
 import javafx.scene.control.TabPane;
+import javafx.scene.control.TableColumn;
+import javafx.scene.control.TableView;
+import javafx.scene.control.TextField;
 
 public class BrasileiraoController {
 
     @FXML
-    private TabPane tabPane; // Referência ao TabPane no FXML
+    private TableColumn<?, ?> colunaPontos;
+
+    @FXML
+    private TextField BotaoADDLocalOrigem;
+
+    @FXML
+    private TableColumn<?, ?> colunaLocalOrigem;
+
+    @FXML
+    private TableColumn<?, ?> colunaJogador;
+
+    @FXML
+    private TableColumn<?, ?> colunaPosicao;
+
+    @FXML
+    private TableColumn<?, ?> colunaGols;
+
+    @FXML
+    private TableColumn<?, ?> colunaJogo;
+
+    @FXML
+    private TableColumn<?, ?> colunaDerrotas;
+
+    @FXML
+    private TextField BotaoADDCorUniforme;
+
+    @FXML
+    private TableColumn<?, ?> colunaEstadio;
+
+    @FXML
+    private TableColumn<?, ?> colunaJogos;
+
+    @FXML
+    private Button BotaoADDCadastrarTime;
+
+    @FXML
+    private Tab BotaoADDTimesCadastrados;
+
+    @FXML
+    private TableView<?> tableViewTimes;
+
+    @FXML
+    private TextField BotaoADDPlacarMandante;
+
+    @FXML
+    private TableView<?> tableViewArtilheiros;
+
+    @FXML
+    private TextField BotaoADDTimeVisitante;
 
     @FXML
     private Tab BotaoADDTabela;
+
     @FXML
-    private Tab BotaoADDArtilheiros;
+    private TableColumn<?, ?> colunaNomeTime;
+
     @FXML
-    private Tab BotaoADDTimesCadastrados;
+    private TextField BotaoADDNomeTime;
+
+    @FXML
+    private TextField BotaoADDHorario;
+
+    @FXML
+    private TextField BotaoADDTimesMandante;
+
     @FXML
     private Tab BotaoADDCadastroTimes;
+
+    @FXML
+    private TextField BotaoADDPlacarVisitante;
+
+    @FXML
+    private TableColumn<?, ?> colunaTimes;
+
+    @FXML
+    private TableView<?> tableView;
+
+    @FXML
+    private TextField BotaoADDABVNomeTime;
+
+    @FXML
+    private TextField BotaoADDEstadio;
+
+    @FXML
+    private Button BotaoADDCadastrarJogo;
+
+    @FXML
+    private TextField BotaoADDAnoFundacao;
+
     @FXML
     private Tab BotaoADDCadastroJogos;
 
-    // Método para alternar as abas programaticamente
-    public void switchTab(Tab tab) {
-        tabPane.getSelectionModel().select(tab); // Troca para a aba especificada
+    @FXML
+    private TableColumn<?, ?> colunaAnoFundacao;
+
+    @FXML
+    private DatePicker BotaoADDData;
+
+    @FXML
+    private TabPane tabPane;
+
+    @FXML
+    private Tab BotaoADDArtilheiros;
+
+    @FXML
+    private TableColumn<?, ?> colunaVitorias;
+
+    @FXML
+    private TableColumn<?, ?> colunaEmpates;
+
+    @FXML
+    void onCadastrarTime(ActionEvent event) {
+
     }
 
-    // Método para ir para a aba "Tabela"
     @FXML
-    private void onSwitchToTabela() {
-        switchTab(BotaoADDTabela); // Alterna para a aba "Tabela"
+    void onCadastrarJogo(ActionEvent event) {
+
     }
 
-    // Método para ir para a aba "Artilheiros"
-    @FXML
-    private void onSwitchToArtilheiros() {
-        switchTab(BotaoADDArtilheiros); // Alterna para a aba "Artilheiros"
-    }
-
-    // Método para ir para a aba "Times"
-    @FXML
-    private void onSwitchToTimes() {
-        switchTab(BotaoADDTimesCadastrados); // Alterna para a aba "Times"
-    }
-
-    // Método para ir para a aba "Cadastrar Times"
-    @FXML
-    private void onSwitchToCadastroTimes() {
-        switchTab(BotaoADDCadastroTimes); // Alterna para a aba "Cadastrar Times"
-    }
-
-    // Método para ir para a aba "Cadastrar Jogos"
-    @FXML
-    private void onSwitchToCadastroJogos() {
-        switchTab(BotaoADDCadastroJogos); // Alterna para a aba "Cadastrar Jogos"
-    }
 }
