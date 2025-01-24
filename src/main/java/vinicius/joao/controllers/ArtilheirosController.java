@@ -8,8 +8,9 @@ public class ArtilheirosController {
     @FXML
     private Tab BotaoADDArtilheiros;
 
-       @FXML
+    @FXML
     void BotaoADDArtilheiros(ActionEvent event) {
 
     }
+
 }

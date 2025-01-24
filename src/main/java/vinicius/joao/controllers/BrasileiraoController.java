@@ -125,12 +125,12 @@ public class BrasileiraoController {
 
     @FXML
     void onCadastrarTime(ActionEvent event) {
-
+        System.out.println("cadastrar time funcionando");
     }
 
     @FXML
     void onCadastrarJogo(ActionEvent event) {
-
+        System.out.println("cadastrar jogo funcionando");
     }
 
 }
