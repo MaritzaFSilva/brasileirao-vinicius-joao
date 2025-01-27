@@ -22,7 +22,13 @@ public class BrasileiraoController {
     private TableColumn<?, ?> colunaLocalOrigem;
 
     @FXML
+    private TextField BotaoADDQuantidadeJogos;
+
+    @FXML
     private TableColumn<?, ?> colunaJogador;
+
+    @FXML
+    private TextField BotaoADDNomeArtilheiro;
 
     @FXML
     private TableColumn<?, ?> colunaPosicao;
@@ -55,7 +61,13 @@ public class BrasileiraoController {
     private TableView<?> tableViewTimes;
 
     @FXML
+    private Button BotaoADDCadastrarArtilheiro;
+
+    @FXML
     private TextField BotaoADDPlacarMandante;
+
+    @FXML
+    private Tab BotaoADDTabela1;
 
     @FXML
     private TableView<?> tableViewArtilheiros;
@@ -68,6 +80,9 @@ public class BrasileiraoController {
 
     @FXML
     private TableColumn<?, ?> colunaNomeTime;
+
+    @FXML
+    private TextField BotaoADDQuantidadeGols;
 
     @FXML
     private TextField BotaoADDNomeTime;
@@ -124,13 +139,38 @@ public class BrasileiraoController {
     private TableColumn<?, ?> colunaEmpates;
 
     @FXML
+    void BotaoADDNomeTime(ActionEvent event) {
+
+    }
+
+    @FXML
+    void BotaoADDNomeArtilheiro(ActionEvent event) {
+
+    }
+
+    @FXML
+    void BotaoADDQuantidadeJogos(ActionEvent event) {
+
+    }
+
+    @FXML
+    void BotaoADDQuantidadeGols(ActionEvent event) {
+
+    }
+
+    @FXML
+    void onCadastrarArtilheiro(ActionEvent event) {
+        System.out.println("Cadastrar Artilheiro Funcionando");
+    }
+
+    @FXML
     void onCadastrarTime(ActionEvent event) {
-        System.out.println("cadastrar time funcionando");
+        System.out.println("Cadastrar Time Funcionando");
     }
 
     @FXML
     void onCadastrarJogo(ActionEvent event) {
-        System.out.println("cadastrar jogo funcionando");
+        System.out.println("Cadastrar Jogo Funcionando");
     }
 
 }

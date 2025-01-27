@@ -59,29 +59,10 @@ public class CadastroTimesController {
 
   @FXML
   void BotaoADDCadastrarTime(ActionEvent event) {
-    // Método de ação para cadastrar um time
-    String nomeTime = BotaoADDCadastrarNomeTime.getText();
-    String nomeEstadio = BotaoADDCadastrarNomeEstadio.getText();
-    String abvTime = BotaoADDCadastroABVtimes.getText();
-    String localOrigem = BotaoADDCadastrarLocalOrigem.getText();
-    String quantidadeJogadores = BotaoADDCadastrarQuantidadeJogadores.getText();
-    String dataFundacao = BotaoADDCadastrarDataFundacao.getValue() != null ? BotaoADDCadastrarDataFundacao.getValue().toString() : "";
-
-    if (nomeTime.isEmpty() || nomeEstadio.isEmpty() || abvTime.isEmpty() || localOrigem.isEmpty() || quantidadeJogadores.isEmpty() || dataFundacao.isEmpty()) {
-        System.out.println("Todos os campos são obrigatórios!");
-    } else {
-        int jogadores = Integer.parseInt(quantidadeJogadores);
-        salvarTime(nomeTime, nomeEstadio, abvTime, localOrigem, jogadores, dataFundacao);
-    }
   }
 
   @FXML
   void BotaoADDCadastrarLocalOrigem(ActionEvent event) {
-  }
-
-  private void salvarTime(String nomeTime, String nomeEstadio, String abvTime, String localOrigem, int jogadores, String dataFundacao) {
-    System.out.println("Time cadastrado: " + nomeTime);
-
   }
 
 }

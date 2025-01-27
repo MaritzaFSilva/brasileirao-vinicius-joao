@@ -9,12 +9,10 @@ public class TabelaController {
     private Tab BotaoADDTabela;
 
     @FXML
-    private TableView<?> tableView;  // Supondo que a tabela seja generica, você pode definir o tipo conforme necessário
+    private TableView<?> tableView;
 
     public void initialize() {
-        // Ações para a aba Tabela, como carregar dados na TableView
         System.out.println("A aba Tabela foi inicializada.");
     }
 
-    // Outros métodos específicos para a aba Tabela
 }
