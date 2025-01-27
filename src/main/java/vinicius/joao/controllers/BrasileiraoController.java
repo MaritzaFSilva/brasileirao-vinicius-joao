@@ -40,10 +40,13 @@ public class BrasileiraoController {
     private TableColumn<?, ?> colunaJogo;
 
     @FXML
+    private Button BotaoADDExcluirJogo;
+
+    @FXML
     private TableColumn<?, ?> colunaDerrotas;
 
     @FXML
-    private TextField BotaoADDCorUniforme;
+    private Button BotaoADDEditarTime;
 
     @FXML
     private TableColumn<?, ?> colunaEstadio;
@@ -61,19 +64,22 @@ public class BrasileiraoController {
     private TableView<?> tableViewTimes;
 
     @FXML
-    private Button BotaoADDCadastrarArtilheiro;
+    private Button BotaoADDEditarArtilheiro;
 
     @FXML
     private TextField BotaoADDPlacarMandante;
 
     @FXML
-    private Tab BotaoADDTabela1;
-
-    @FXML
     private TableView<?> tableViewArtilheiros;
 
     @FXML
+    private Button BotaoADDExcluirArtilheiro;
+
+    @FXML
     private TextField BotaoADDTimeVisitante;
+
+    @FXML
+    private Tab BotaoADDCadastrarArtilheiros;
 
     @FXML
     private Tab BotaoADDTabela;
@@ -97,6 +103,9 @@ public class BrasileiraoController {
     private Tab BotaoADDCadastroTimes;
 
     @FXML
+    private Button BotaoADDCadastrarArtilheiro1;
+
+    @FXML
     private TextField BotaoADDPlacarVisitante;
 
     @FXML
@@ -104,9 +113,6 @@ public class BrasileiraoController {
 
     @FXML
     private TableView<?> tableView;
-
-    @FXML
-    private TextField BotaoADDABVNomeTime;
 
     @FXML
     private TextField BotaoADDEstadio;
@@ -118,10 +124,19 @@ public class BrasileiraoController {
     private TextField BotaoADDAnoFundacao;
 
     @FXML
+    private TextField BotaoADDNomeTimeAt;
+
+    @FXML
+    private Button BotaoADDEditarJogo;
+
+    @FXML
     private Tab BotaoADDCadastroJogos;
 
     @FXML
     private TableColumn<?, ?> colunaAnoFundacao;
+
+    @FXML
+    private Button BotaoADDExcluirTime;
 
     @FXML
     private DatePicker BotaoADDData;
@@ -139,7 +154,7 @@ public class BrasileiraoController {
     private TableColumn<?, ?> colunaEmpates;
 
     @FXML
-    void BotaoADDNomeTime(ActionEvent event) {
+    void BotaoADDNomeTimeAt(ActionEvent event) {
 
     }
 
@@ -159,18 +174,50 @@ public class BrasileiraoController {
     }
 
     @FXML
+    void onEditarArtilheiro(ActionEvent event) {
+        System.out.println("Editar Artilheiro Funcionando !");
+    }
+
+    @FXML
     void onCadastrarArtilheiro(ActionEvent event) {
-        System.out.println("Cadastrar Artilheiro Funcionando");
+        System.out.println("Cadastrar Artilheiro Funcionando !");
+    }
+
+    @FXML
+    void onExcluirArtilheiro(ActionEvent event) {
+        System.out.println("Excluir Artilheiro funcionando !");
+    }
+
+    @FXML
+    void onExcluirTime(ActionEvent event) {
+        System.out.println("Excluir Time funcionando !");
     }
 
     @FXML
     void onCadastrarTime(ActionEvent event) {
-        System.out.println("Cadastrar Time Funcionando");
+        System.out.println("Cadastrar Time funcionando !");
+    }
+
+    @FXML
+    void onEditarTime(ActionEvent event) {
+        System.out.println("Editar Time funcionando !");
+    }
+
+    @FXML
+    void onExcluirJogo(ActionEvent event) {
+        System.out.println("Excluir Jogo funcionando !");
     }
 
     @FXML
     void onCadastrarJogo(ActionEvent event) {
-        System.out.println("Cadastrar Jogo Funcionando");
+        System.out.println("Cadastrar jogo funcionando !");
+    }
+
+    @FXML
+    void onEditarJogo(ActionEvent event) {
+        System.out.println("Editar jogo funcionando !");
     }
 
 }
+
+

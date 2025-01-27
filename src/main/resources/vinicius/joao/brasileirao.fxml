@@ -66,7 +66,6 @@
                               <TableColumn fx:id="colunaJogador" prefWidth="160.0" text="JOGADOR" />
                               <TableColumn fx:id="colunaGols" minWidth="50.0" prefWidth="160.0" text="TIME" />
                               <TableColumn fx:id="colunaJogo" prefWidth="160.0" text="GOLS" />
-                              <TableColumn prefWidth="160.0" text="JOGO" />
                            </columns>
                         </TableView>
                      </content>
@@ -84,16 +83,18 @@
                      </TableView>
                      </content>
                   </Tab>
-                  <Tab fx:id="BotaoADDTabela1" text="Cadastrar Artilheiros">
+                  <Tab fx:id="BotaoADDCadastrarArtilheiros" text="Cadastrar Artilheiros">
                      <content>
                         <AnchorPane prefHeight="200.0" prefWidth="200.0">
                            <children>
-                              <TextField fx:id="BotaoADDNomeTime" layoutX="222.0" layoutY="85.0" onAction="#BotaoADDNomeTime" promptText="Time" />
+                              <TextField fx:id="BotaoADDNomeTimeAt" layoutX="222.0" layoutY="85.0" onAction="#BotaoADDNomeTimeAt" promptText="Time" />
                               <TextField fx:id="BotaoADDNomeArtilheiro" layoutX="222.0" layoutY="45.0" onAction="#BotaoADDNomeArtilheiro" promptText="Nome" />
                               <TextField fx:id="BotaoADDQuantidadeJogos" layoutX="222.0" layoutY="126.0" onAction="#BotaoADDQuantidadeJogos" promptText="Quantidade de Jogos" />
                               <TextField fx:id="BotaoADDQuantidadeGols" layoutX="222.0" layoutY="168.0" onAction="#BotaoADDQuantidadeGols" promptText="Quantidade de Gols" />
-                              <Button fx:id="BotaoADDCadastrarArtilheiro" layoutX="241.0" layoutY="221.0" mnemonicParsing="false" onAction="#onCadastrarArtilheiro" text="Cadastrar Artilheiro" />
                               <Label layoutX="246.0" layoutY="14.0" text="Cadastre o artilheiro!" />
+                              <Button fx:id="BotaoADDEditarArtilheiro" layoutX="98.0" layoutY="231.0" mnemonicParsing="false" onAction="#onEditarArtilheiro" text="Editar Artilheiro" />
+                              <Button fx:id="BotaoADDCadastrarArtilheiro1" layoutX="246.0" layoutY="231.0" mnemonicParsing="false" onAction="#onCadastrarArtilheiro" text="Cadastrar Artilheiro" />
+                              <Button fx:id="BotaoADDExcluirArtilheiro" layoutX="420.0" layoutY="231.0" mnemonicParsing="false" onAction="#onExcluirArtilheiro" text="Excluir Artilheiro" />
                            </children>
                         </AnchorPane>
                      </content>
@@ -107,8 +108,10 @@
                 <TextField fx:id="BotaoADDEstadio" layoutX="357.0" layoutY="148.0" promptText="Estádio" />
                 <TextField fx:id="BotaoADDAnoFundacao" layoutX="357.0" layoutY="98.0" promptText="Ano de Fundação" />
                 <!-- Botão para cadastrar o time -->
-                <Button fx:id="BotaoADDCadastrarTime" layoutX="278.0" layoutY="221.0" onAction="#onCadastrarTime" text="Cadastrar Time" />
+                <Button fx:id="BotaoADDExcluirTime" layoutX="147.0" layoutY="221.0" onAction="#onExcluirTime" text="Excluir Time" />
                               <Label layoutX="284.0" layoutY="49.0" text="Cadastre o time!" />
+                              <Button fx:id="BotaoADDCadastrarTime" layoutX="273.0" layoutY="221.0" onAction="#onCadastrarTime" text="Cadastrar Time" />
+                              <Button fx:id="BotaoADDEditarTime" layoutX="413.0" layoutY="221.0" onAction="#onEditarTime" text="Editar Time" />
             </children>
         </AnchorPane>
     </content>
@@ -122,12 +125,14 @@
                            <TextField fx:id="BotaoADDTimeVisitante" layoutX="367.0" layoutY="106.0" promptText="Time Visitante" />
                            <TextField fx:id="BotaoADDPlacarMandante" layoutX="98.0" layoutY="60.0" promptText="Placar Mandante" />
                            <TextField fx:id="BotaoADDPlacarVisitante" layoutX="367.0" layoutY="60.0" promptText="Placar Visitante" />
-                           <DatePicker fx:id="BotaoADDData" layoutX="367.0" layoutY="198.0" prefHeight="31.0" prefWidth="187.0" />
+                           <DatePicker fx:id="BotaoADDData" layoutX="222.0" layoutY="193.0" prefHeight="31.0" prefWidth="187.0" />
                            <TextField fx:id="BotaoADDEstadio" layoutX="98.0" layoutY="152.0" promptText="Estádio" />
                            <TextField fx:id="BotaoADDHorario" layoutX="367.0" layoutY="152.0" promptText="Horário" />
                            <!-- Botão para cadastrar o jogo -->
-                           <Button fx:id="BotaoADDCadastrarJogo" layoutX="132.0" layoutY="204.0" onAction="#onCadastrarJogo" text="Cadastrar Jogo" />
+                           <Button fx:id="BotaoADDExcluirJogo" layoutX="142.0" layoutY="245.0" onAction="#onExcluirJogo" text="Excluir Jogo" />
                               <Label layoutX="270.0" layoutY="24.0" text="Cadastre o jogo!" />
+                              <Button fx:id="BotaoADDCadastrarJogo" layoutX="266.0" layoutY="245.0" onAction="#onCadastrarJogo" text="Cadastrar Jogo" />
+                              <Button fx:id="BotaoADDEditarJogo" layoutX="402.0" layoutY="245.0" onAction="#onEditarJogo" text="Editar Jogo" />
                         </children>
                      </AnchorPane>
                      </content>
