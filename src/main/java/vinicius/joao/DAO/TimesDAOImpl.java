@@ -9,10 +9,10 @@ import java.util.List;
 
 import vinicius.joao.BD.FabricaConexoes;
 
-public class ViewTimesDAOImpl {
+public class TimesDAOImpl {
     private Connection connection;
 
-    public ViewTimesDAOImpl() throws SQLException {
+    public TimesDAOImpl() throws SQLException {
         this.connection = FabricaConexoes.getInstance().getConnection();
 
     }
