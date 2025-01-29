@@ -27,12 +27,7 @@
          <children>
             <Pane layoutY="-1.0" prefHeight="78.0" prefWidth="676.0" style="-fx-background-color: #1E90FF;">
                <children>
-                  <ImageView fitHeight="70.0" fitWidth="71.0" layoutX="20.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <!-- <Image url="@../184443_imgbank_.png" /> -->
-                     </image>
-                  </ImageView>
-                  <Label layoutX="167.0" layoutY="23.0" text="Brasileirão da galera">
+                  <Label layoutX="193.0" layoutY="23.0" text="Brasileirão da galera">
                      <font>
                         <Font name="Arial Bold Italic" size="27.0" />
                      </font>
@@ -66,6 +61,7 @@
                               <TableColumn fx:id="colunaJogador" prefWidth="160.0" text="JOGADOR" />
                               <TableColumn fx:id="colunaGols" minWidth="50.0" prefWidth="160.0" text="TIME" />
                               <TableColumn fx:id="colunaJogo" prefWidth="160.0" text="GOLS" />
+                              <TableColumn fx:id="colunaJogo1" prefWidth="160.0" text="JOGOS" />
                            </columns>
                         </TableView>
                      </content>

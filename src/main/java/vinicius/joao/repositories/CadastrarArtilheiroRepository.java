@@ -1,15 +1,18 @@
 package vinicius.joao.repositories;
 
+import java.sql.SQLException;
+
 import vinicius.joao.DAO.CadastrarArtilheiroDAOImpl;
 
 public class CadastrarArtilheiroRepository {
 
-    // Implementar métodos para cadastrar artilheiros no banco de dados
-    CadastrarArtilheiroDAOImpl CadastrarArtilheiroDAOImpl;
+    private CadastrarArtilheiroDAOImpl dao;
 
-    public CadastrarArtilheiroRepository(vinicius.joao.DAO.CadastrarArtilheiroDAOImpl cadastrarArtilheiroDAOImpl) {
-        CadastrarArtilheiroDAOImpl = cadastrarArtilheiroDAOImpl;
+    public CadastrarArtilheiroRepository() throws SQLException {
+        this.dao = new CadastrarArtilheiroDAOImpl();
     }
 
-    
+    public void cadastrarArtilheiro(String nome, int timeId, int gols) throws SQLException {
+        dao.cadastrarArtilheiro(nome, timeId, gols); // Passando os parâmetros corretamente
+    }
 }
